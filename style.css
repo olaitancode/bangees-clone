@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.header{
+    background-image: url(./Hero-10.webp);
+    width: auto;
+    height: 100vh;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    padding: 20px;
+    /* left: 0; */
+    /* top: 0;    */
+}
+.nav2 a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+        
+}
+.nav2{
+    margin-top: 30px;
+    padding-left: 70vh;
+}
+/* #menuicn{
+    font-size: 2rem;
+    color: #ECBD47;
+    cursor: pointer;
+    display: none;
+} */
+.menu{
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 20px;
+    display: none;
+}
+.text p{
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    border-style: double;
+    width: 250px;
+    border-color: #ECBD47;
+    border-radius: 20px;
+    background-color: #FAEFD1;
+    padding: 5px 10px;
+}
+.text h1{
+    /* color: #fff; */
+    font-size: 65px;
+    line-height: 1.2;
+    font-family: sans-serif;
+}
+.text{
+    color: #fff;
+    padding: 145px 95px;
+}
+.top {
+    margin-top: 15px;
+}
+.btn{
+    border-radius: 15px;
+    background-color: #ECBD47;
+    border-style: none;
+    padding: 10px;
+    font-weight: 900;
+}
+.btn1{
+    border-radius: 15px;
+    border-color: #fff;
+    background: none;
+    color: #fff;
+    padding: 10px;
+    font-weight: 900;
+    /* margin-left: 20px; */
+}
+.btn1:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    border-style: none;
+}
+.star{
+    background-color: #5f4934;
+    padding: 80px 120px;
+    /* height: 300vh; */
+}
+.star1{
+    display: flex;
+    /* padding: 80px 100px; */
+    gap: 50px;
+    margin-top: 50px;
+}
+.star h2{
+    color: #ECBD47;
+    font-weight: 700;  
+}
+
+.star p{
+    color: #fff;
+    width: 700px;
+
+}
+.jj{
+    margin-top: 50px;
+   
+}
+.jj img{
+    width: 55vh;
+    margin-top: 20px;
+}
+hr{
+    border: none;
+    height: 2px;
+    background-color: #ECBD47;
+    margin-top: 30px;
+}
+.xx{
+    gap: 30vh;
+    margin-top: 30px;
+    display: flex;
+
+}
+.list{
+    color: #ECBD47;
+    font-size: 20px;
+}
+.xx li{
+    list-style: none;
+}
+.menu{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.dot{
+    margin-top: 10px;
+    padding: 0;
+    transition: max-height 0.3s ease;
+    display: none;
+}
+.dot.show {
+    display: block;
+
+}
+.tt{
+    cursor: pointer;
+}
+.dd{
+    display: flex;
+    gap: 30vh;
+    margin-top: 30px;
+}
+.dd li{
+    list-style: none;
+
+}
+.dd li a{
+    text-decoration: none;
+    color: #ECBD47;
+    font-weight: 900;
+}
+.pp{
+    display: flex;
+    gap: 20vh;
+    margin-top: 50px;
+    p{
+        width: 500px;
+        font-size: 20px;
+    }
+    h2{
+        text-align: center;
+    }
+}
+.btn3 {
+    border-radius: 15px;
+    border-color: #ECBD47;
+    background: none;
+    color: #fff;
+    padding: 10px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+.btn3:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    border-style: none;
+}
+ .footer{
+    background-color: #ECBD47;
+    padding: 40px 70px;
+    position: relative;
+    
+ }
+ .foot{
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+}
+.foot5{
+    padding-top: 80px;
+
+    h2{
+        color: #5f4934;
+        font-size: 25px;
+    }
+}
+.foot2{
+    display: flex;
+    margin-top: 30px;
+    gap: 50px;
+}
+.foot3{
+    display: flex;
+}
+.foo{
+    margin-top: 30px;
+}
+.foo a {
+    text-decoration: none;
+    color: #5f4934;
+    font-size: 30px;
+}
+.foot4 p{
+    color: #5f4934;
+    width: 500px;
+    font-size: 20px;
+}
+
+@media (max-width:768px) {
+    .nav2{
+        position: absolute;
+        flex-direction: column;
+        /* top: 0%; */
+        right: 0px;
+        /* left: 350%; */
+        background-color: red;
+        /* text-align: right; */
+        /* right: 10%; */
+        /* margin-left: 80px; */
+        width: 100%;
+        padding: 1rem 3%;
+        /* display: block; */
+        display: none;
+        /* justify-content: end; */
+    }
+    .menu {
+        display: block;
+    }
+    
+    .navbar1.active {
+        display: flex;
+    }
+    .nav2 a{
+        display: block;
+        margin: 3rem 1;
+       
+    }
+    .text h1{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .text{
+        padding: 150px 50px;  
+    }
+    .top{
+        gap: 30px;
+    }
+    .btn1{
+        margin-top: 30px;
+    }
+
+    .star{
+        padding: 20px;
+    }
+    
+    .star1{
+        display: block;
+        
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 15px;
+            margin-top: 20px;
+        }
+    }
+    .xx{
+        display: block;
+    }
+    .pp{
+        display: block;
+    }
+    #menuicn{
+        display: block;
+        /* text-align: left; */
+    }
+    /* x */
+
+
+}
+@media (max-width: 1024px) {
+  .star1, .xx, .dd, .pp, .foot2, .foot3 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .star p {
+    width: 90%;
+    /* text-align: center; */
+  }
+
+  .jj img{
+    width: 40vw;
+  }
+  .pp p {
+    /* width: 90%; */
+    font-size: 18px;
+    margin-top: 20px;
+    /* text-align: center; */
+  }
+  .foot img{
+    width: 70%;
+    margin-top: 80px;
+    /* justify-content: center; */
+  }
+  .foot3{
+    display: flex;
+  }
+
+  .foot4 p{
+    width: 90%;
+    font-size: 18px;
+    /* text-align: center; */
+  }
+  .foot5 h2{
+    line-height: 1.2;
+    font-size: 15px;
+    margin-top: 25px;
+  }
+
+  .btn3 {
+    margin-left: 0;
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .star1, .xx, .dd, .pp, .foot2, .foot3 {
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center; */
+  }
+
+  .star h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .star p {
+    width: 90%;
+    font-size: 16px;
+    /* text-align: center; */
+  }
+
+  .jj img {
+    width: 80vw;
+  }
+
+  .list, .menu, .dd li a {
+    font-size: 16px;
+    /* text-align: center; */
+  }
+
+  .pp p {
+    width: 90%;
+    font-size: 16px;
+    /* text-align: center; */
+  }
+
+  .btn3 {
+    margin-left: 0;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .foot4 p {
+    width: 90%;
+    font-size: 16px;
+    /* text-align: center; */
+  }
+
+  .foo a {
+    font-size: 24px;
+  }
+}
